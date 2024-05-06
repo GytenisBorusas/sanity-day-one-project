@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { SanityDocument } from "next-sanity";
 
-import { sanityFetch } from "@/sanity/client";
+import {sanityFetch} from "@/sanity/client";
 
 const EVENTS_QUERY = `*[_type == "event"]{_id, name, slug, date}|order(date desc)`;
 
